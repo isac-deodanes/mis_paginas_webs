@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fuentes/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fuentes/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fuentes/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../fuentes/static/Montserrat-Bold.ttf);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background: linear-gradient(#444, #222, #111);
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #121212;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 18px #68e;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: #68e;
+    font-family: Montserrat;
+    margin: 0 16px;
+    font-size: 18px;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+
+main {
+    padding: 0px 170px;
+}
+
+.cont-imagen {
+    display: flex;
+    width: 100%;
+}
+
+ul {
+    margin-left: 17px;
+}
+
+li {
+    padding: 10px;
+}
+
+.estilo {
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: #e8e8e8;
+
+}
+
+center {
+    padding: 15px;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-variant: small-caps;
+    font-weight: 700;
+    color: #eee;
+}
+
+.descripcion {
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #eee;
+}
+
+.titulo {
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #eee;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #e8e8e8;
+    padding: 15px;
+}
+
+p,
+li {
+    font-size: 16px;
+    font-family: Montserrat;
+    color: #eee;
+
+}
+
+.subcontenedor-imagen {
+    display: flex;
+    margin: 45px;
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.subcontenedor-resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 65px;
+
+}
+
+img {
+    width: 100%;
+    height: 370px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #eee;
+    padding: 30px;
+    font-family: Montserrat;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer img {
+    filter: invert();
+    width: 25px;
+    margin: 0 10px;
+    height: 25px;
+}
+
+footer .hcuatro,
+.pFooter {
+    font-family: Montserrat;
+    color: #eee;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.hcuatro {
+    margin-top: 16px;
+}
+
+.pFooter {
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+/* ------------------------------------indice deplegable------------------------------------- */
+
+#check {
+    display: none;
+}
+
+
+.checkbtn {
+    /* display: block; */
+    position: fixed;
+    width: 69px;
+    height: 26px;
+    text-align: center;
+    color: aliceblue;
+    left: 0;
+    background: black;
+    top: 105px;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px 10px 10px 0px;
+}
+
+
+.nav-indice ul {
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    transition: left 0.25s;
+    margin: 0;
+    padding-top: 70px;
+    background-color: #000000;
+
+}
+
+ul {
+    padding: 0;
+}
+
+.nav-indice ul li {
+    padding: 22px;
+    display: flex;
+    /* justify-content: center; */
+    margin: 0;
+    background-color: rgb(17 17 17);
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+#check:checked~.nav-indice ul {
+    left: 0;
+}
+
+#check:checked~.checkbtn .indice {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* ---------------------menu de navegacion desplegfable--------------------------------- */

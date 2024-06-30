@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/boxModel.css">
+    <link rel="shortcut icon" href="../images/css--favicon.png" type="image/x-icon">
+    <title>Box Model</title>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo--header--css.png" alt="img">
+        <nav>
+            <a href="../css_index.html">Inicio</a>
+            <a href="../parte_html/html_index.html">HTML</a>
+            <a href="/acerca_d/promociones.html">Promociones</a>
+            <a href="/acerca_d/contactanos.html">Contáctanos</a>
+            <a href="/acerca_d/conocenos.html">Conócenos</a>
+        </nav>
+    </header>
+    <div class="principal">
+        <div class="titulo">Modelo de caja CSS</div><br>
+        <section>
+            <div class="intro">Introduccion</div>
+            <p>Al maquetar un documento, el motor de renderizado del navegador representa cada elemento como una caja
+                rectangular, conforme al estándar del modelo de caja básico de CSS. CSS determina el tamaño, la posición
+                y las propiedades (color, fondo, tamaño del borde, etc.) de estas cajas.</p>
+            <p>Cada caja está compuesta de cuatro partes (o áreas), definidas por sus respectivos límites: límite de
+                contenido (content edge) , límite de relleno (padding edge) , límite de borde (border edge) y límite de
+                margen (margin edge) .</p>
+            <br>
+            <div class="subtitulo">Área de contenido (content area)</div>
+            <p>El área de contenido o content area, delimitada por el límite de contenido (Content edge en la imagen),
+                contiene el contenido "real" del elemento, como texto, una imagen o un reproductor de video. Sus
+                dimensiones son "content width" o ("content-box width") que hace referencia al ancho del contenido, y
+                "content height" o ("content-box height") que hace referencia al alto. A menudo, tiene un color o una
+                imagen de fondo.</p>
+            <p>Si la propiedad box-sizing está definida como content-box (que es el valor por defecto) y el elemento es
+                un "elemento de bloque", el tamaño del área de contenido puede definirse explícitamente con las
+                propiedades width , min-width , max-width , height , min-height y max-height .</p><br><br>
+
+            <div class="subtitulo">Área de relleno (padding area)</div>
+            <p>El área de relleno o padding area, delimitada por el límite de relleno (Padding Edge en la imagen),
+                extiende el área de contenido para incluir el relleno del elemento. Sus dimensiones son "padding-box
+                width" para el ancho y "padding-box height" para el alto.</p>
+            <p>El tamaño del relleno viene determinado por las propiedades padding-top , padding-right , padding-bottom
+                , padding-left y la propiedad resumida padding .</p><br><br>
+
+            <div class="subtitulo">Área de borde (border area)</div>
+            <p>El área de borde o border area, delimitada por el límite de borde (Border Edge en la imagen), extiende el
+                área de relleno para incluir los bordes del elemento. Sus dimensiones son "border-box width" para el
+                ancho y "border-box height" para el alto.</p><br><br>
+
+            <div class="subtitulo">Área de margen (margin area)</div>
+            <p>El área de margen o margin area, delimitada por el límite de margen (Margin edge en la imagen), extiende
+                el área de borde para incluir un área vacía, utilizada para separar al elemento del resto de sus
+                vecinos. Sus dimensiones son "margin-box width" para el ancho y "margin-box height" para el alto.</p><br>
+        </section>
+        <br>
+        <section>
+            <div class="intro">El modelo de caja CSS</div>
+            <p>En CSS, el término "modelo de caja" se utiliza cuando se habla de diseño y maquetación.</p>
+            <p>El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML. Consta de: contenido,
+                relleno, bordes y márgenes. La siguiente imagen ilustra el modelo de caja:</p>
+
+            <div class="cont-imagen">
+                <img src="../images/imagenBoxModel.png" alt="imag">
+            </div>
+            <p>Explicación de las diferentes partes:</p><br>
+            <ul>
+                <li><b>contenido:</b>el contenido del cuadro, donde aparecen el texto y las imágenes.</li>
+                <li><b>Relleno:</b>despeja un área alrededor del contenido. El acolchado es transparente</li>
+                <li><b>Borde:</b>un borde que rodea el relleno y el contenido</li>
+                <li><b>Margen:</b>despeja un área fuera del borde. El margen es transparente</li>
+            </ul>
+            <br>
+            <p>El modelo de caja nos permite añadir un borde alrededor de los elementos y definir el espacio entre
+                elementos. </p>
+            <div class="cont-imagen">
+                <img src="../images/ejemploBoxModel.png" alt="img">
+            </div>
+            <br>
+            <div class="subtitulo">Demostración del modelo de caja</div>
+            <p>El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML. Consta de: bordes,
+                relleno, márgenes y el contenido real.</p>
+            <div class="cont-imagen">
+                <img src="../images/demostracionBoxModel.png" class="demo-img" alt="img">
+            </div><br><br>
+            <div class="subtitulo">Anchura y altura de un elemento</div>
+            <p>Para establecer correctamente la anchura y la altura de un elemento en todos los navegadores, es
+                necesario saber cómo funciona el modelo de caja.</p>
+            <br>
+            <p><b>Importante:</b> Al establecer las propiedades width y height de un con CSS, solo tienes que establecer
+                el
+                ancho y el alto del área de contenido. Para Calcula el ancho y alto total de un elemento, también debes
+                incluir el relleno y los bordes.</p>
+            <div class="cont-imagen">
+                <img src="../images/demo2boxModel.png" alt="imh">
+            </div>
+            <br>
+            <div class="subtitulo">Demostracion</div>
+            <div class="cont-imagen">
+                <img src="../images/demo3boxModel.png" class="demo-img" alt="img">
+            </div>
+            <br><br>
+            <p>El ancho total de un elemento debe calcularse de la siguiente manera:</p>
+            <p>Ancho total del elemento = ancho + relleno izquierdo + relleno derecho + borde izquierdo + borde derecho
+            </p>
+            <p>La altura total de un elemento debe calcularse de la siguiente manera:</p>
+            <p>Altura total del elemento = altura + relleno superior + relleno inferior + borde superior + borde
+                inferior</p>
+        </section>
+    </div>
+    <footer>
+        <nav class="footer">
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="../images/icons8-facebook-nuevo-50.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="../images/icons8-instagram-50.png" alt=""></a>
+            <a href="https://www.youtube.com/"><img src="../images/icons8-youtube-50.png" alt=""></a>
+            <a href="https://x.com/?lang=es"><img src="../images/icons8-twitterx-50.png" alt=""></a>
+            <a href="https://sv.linkedin.com/"><img src="../images/icons8-linkedin-50.png" alt=""></a>
+        </nav>
+        <h4 class="hcuatro">
+            HTML Solutions
+        </h4>
+        <p class="pFooter">
+            © Derechos reservados 2024
+        </p>
+    </footer>
+</body>
+
+</html>

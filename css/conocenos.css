@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../static/Montserrat-Bold.ttf);
+}
+body{
+    margin: 0px;
+    background: linear-gradient(#444, #222,#111);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #121212;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 18px #e8e8e8;
+}
+header img{
+    width: 50px;
+    filter: invert();
+    filter: saturate(0) brightness(100);
+}
+nav a:hover{
+    text-decoration: underline;
+}
+header a{
+    text-decoration: none;
+    color: #e8e8e8;
+    font-family: Montserrat;
+    margin: 0 16px;
+    font-size: 18px;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+    max-width: 800px;
+    color: #e8e8e8;
+    font-family: Montserrat;
+}
+.content h3{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 36px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.content h3:first-child{
+    margin-top: 36px;
+}
+.content--1st--img img{
+    height: 160px;
+    margin: auto;
+}
+.content--1st--img{
+    display: flex;
+    justify-content: center;
+}
+.content h4{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.content h4:first-child{
+    margin-top: 36px;
+}
+.content p{
+    margin: 16px;
+    text-align: justify;
+}
+
+.scroll_bar {
+    display: flex;
+    margin: auto;
+    max-width: 780px;
+}
+@media screen and (max-width:500px) {
+    .scroll_bar{
+        max-width: 420px;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header img{
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .sub-title{
+        text-align: center;
+        font-size: 18px;
+    }
+    .text{
+        font-size: 14px;
+        text-align: right;
+    }
+    .imagen{
+        height: 20px;
+        width: 120px;
+    }
+}
+.contBox {
+    padding: 20px;
+    display: flex;
+    max-width: 780px;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 14px;
+}
+.contBox::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(80, 80, 80);
+    background: radial-gradient(circle, rgb(80, 80, 80) 0%, rgb(107, 107, 107) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    height: 160px;
+}
+
+.box:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.04);
+}
+
+.text-box {
+    width: 160px;
+    padding: 0px 0px 0px 10px;
+}
+.sub-title{
+    color: #e8e8e8;
+    font-size: 22px;
+    font-family: Montserrat;
+    text-align: left;
+
+}
+.text{
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    font-family: Montserrat;
+}
+.imagen {
+    border-radius: 10px;
+    height: 75px;
+    width: 145px;
+}
+.section {
+    position: absolute;
+    top: 70px;
+    height: 393px;
+    margin: 10px 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    margin: 0 6px 0 0;
+}
+.nav-icons img{
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+    filter: invert();
+}
+.box {
+    view-timeline-name: --image;
+    view-timeline-axis: inline;
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+    animation-direction: alternate;
+
+    animation-timing-function: ease-in-out;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color:#eee;
+    padding: 30px;
+    font-family: Montserrat;
+    margin-top: 30px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.footer img{
+    filter: invert();
+    width: 25px;
+    margin: 0 10px;
+}
+footer h4, p{
+    font-family: Montserrat;
+    color: #eee;
+    margin-bottom: 0px;
+    text-align: center;
+}

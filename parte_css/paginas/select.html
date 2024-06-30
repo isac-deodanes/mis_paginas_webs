@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <link rel="stylesheet" href="../estilos/select.css">
+    <link rel="shortcut icon" href="../images/css--favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="../images/logo--header--css.png" alt="img">
+        <nav>
+            <a href="../css_index.html">Inicio</a>
+            <a href="/parte_html/html_index.html">HTML</a>
+            <a href="#">JavaScript</a>
+            <a href="/acerca_d/contactanos.html">Contáctanos</a>
+            <a href="/acerca_d/conocenos.html">Acerca de nosotros</a>
+        </nav>
+    </header>
+    <section>
+        <h1>
+            Selectores
+        </h1>
+        <div class="content">
+            <h3>
+                Introducción
+            </h3>
+            <p>
+                En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos aplicar estilo. Hay una amplia variedad de selectores CSS, lo que permite una gran precisión a la hora de seleccionar elementos a los que aplicar estilo. En este artículo y sus subartículos veremos con detalle todos los tipos y el modo como funcionan.
+            </p>
+            <h3>
+                ¿Qué es un selector?
+            </h3>
+            <p>
+                Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades CSS. El elemento o los elementos seleccionados por el selector se denominan sujeto del selector.
+            </p>
+            <div class="select--0">
+                <img src="../images/select--1.png" alt="">
+            </div>
+            <p>
+                La etiqueta <span class="bold">h1</span> funciona como selector, en el caso de que usemos como selector el nombre de una etiqueta, eso quiere decir que todos los atributos que modifiquemos, se aplicaran a todas las etiquetas de ese tipo, en este caso a todas las etiquetas <span class="bold">h1</span>.
+                <br>
+                <br>
+                También existen otros tipo de selectores, como id´s y clases
+                <br>
+                <br>
+                Pero antes, veamos como agrupar selectores, podemos hacerlo usando una coma entre los selectores, para aplicar los mismos estilos a diferentes etiquetas, o selectores
+            </p>  
+            <div class="select--1">
+                <img src="../images/select--2.png" alt="">
+            </div>
+            <h3>
+                Selectores de tipo, de clase, y de Id
+            </h3>
+            <p>
+                Los selectores de tipo Id y clase, se utilizan para seleccionar etiquetas más especificas, a las que previamente, en el archivo HTML, se les asignó un Id o una clase.
+                <br>
+                <br>
+                Clase: Las clases se utilizan para seleccionar un conjunto de etiquetas, que pueden ser del mismo tipo, o diferentes, para posteriormente aplicarle los mismos estilos.
+                <br>
+                <br>
+                En el documento HTML, se ven de la siguiente manera: <span class="bold">&ltdiv class="container"&gt&lt/div&gt</span>
+                <br>
+                <br>
+                Y en el documento CSS se ven de la siguiente manera: <span class="bold">.container</span>
+                <br>
+                </p>
+                <div class="select--1">
+                    <img src="../images/select--3.png" alt="">
+                </div>
+                <p>
+                Id: Se le asigna unicamente a un elemento, al que se le quiere cambiar su estilo en CSS.
+                <br>
+                <br>
+                En el documento HTML, se ven de la siguiente manera: <span class="bold">&ltdiv id=container"&gt&lt/div&gt</span>
+                <br>
+                <br>
+                Y en el documento CSS se ven de la siguiente manera: <span class="bold">#container</span>
+                <br>
+                </p>
+                <div class="select--1">
+                    <img src="../images/select--4.png" alt="">
+                </div>
+                <p>
+                    También existen otros selectores que son llamados pseudoclases y pseudoelementos, puedes conocer más acerca de estos selectores en el siguiente video:
+                </p>
+                <div class="video">
+                <iframe src="https://www.youtube.com/embed/LUjsToWH8s4" title="#6 Curso Básico de CSS3 para principiantes - Pseudo-clases y pseudo-elementos en css" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav class="footer">
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="../images/icons8-facebook-nuevo-50.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="../images/icons8-instagram-50.png" alt=""></a>
+            <a href="https://www.youtube.com/"><img src="../images/icons8-youtube-50.png" alt=""></a>
+            <a href="https://x.com/?lang=es"><img src="../images/icons8-twitterx-50.png" alt=""></a>
+            <a href="https://sv.linkedin.com/"><img src="../images/icons8-linkedin-50.png" alt=""></a>
+        </nav>
+        <h4>
+            HTML Solutions
+        </h4>
+        <p>
+            © Derechos reservados 2024
+        </p>
+    </footer>
+</body>
+</html>

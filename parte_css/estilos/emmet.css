@@ -1,0 +1,464 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fuentes/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fuentes/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fuentes/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../fuentes/static/Montserrat-Bold.ttf);
+}
+body{
+    margin: 0px;
+    background: linear-gradient(#444, #222,#111);
+}
+.menu{
+    position: sticky;
+    max-width: 80px;
+    top: 150px;
+    left: 50px;
+    color: #e8e8e8;
+    padding: 20px;
+    border-radius: 18px 18px 0px 18px;
+    background-color: transparent;
+    box-shadow: 0 0 20px #68e;
+}
+.menu h5{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    text-align: center;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #121212;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 18px #68e;
+}
+header img{
+    width: 50px;
+}
+header a{
+    text-decoration: none;
+    color: #68e;
+    font-family: Montserrat;
+    margin: 0 16px;
+    font-size: 18px;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+h1{
+    font-family: Montserrat-bold;
+    text-align: center;
+    color: #e8e8e8;
+    margin: 20px 0px 10px 0px;
+    letter-spacing: 4px;
+    font-size: 48px;
+}
+.ejemplo_txt{
+    font-weight: bold;
+    color: #ffffff;
+}
+.vscode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.vscode img{
+    max-width: 100%;
+    width: 180px;
+    margin-right: 28px;
+    border-radius: 0 20px 20px 0;
+}
+.vscode a{
+    text-decoration: none;
+    color:#e8e8e8;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.vscode a:hover{
+    color: #68e;
+}
+@media  screen and (max-width:500px) {
+    .vscode a{
+        margin-top: 16px;
+    }
+}
+.emmet--1st{
+    display: flex;
+    justify-content: center;
+} 
+.emmet--1st img{
+    max-width: 100%;
+    width: 600px;
+    margin: 0 10px 0 10px;
+}
+.emmet--2nd{
+    display: flex;
+    justify-content: center;
+}
+.emmet--2nd img{
+    max-width: 100%;
+    width: 300px;
+    margin: 0 10px 0 10px;
+}
+.emmet--3rd{
+    display: flex;
+    justify-content: center;
+}
+.emmet--3rd img{
+    max-width: 100%;
+    width: 300px;
+    margin: 0 10px 0 10px;
+}
+.emmet--4th{
+    display: flex;
+    justify-content: center;
+}
+.emmet--4th img{
+    max-width: 100%;
+    width: 400px;
+    margin: 0 10px 0 10px;
+}
+.emmet--5th{
+    display: flex;
+    justify-content: center;
+}
+.emmet--5th img{
+    max-width: 100%;
+    width: 400px;
+    margin: 0 10px 0 10px;
+}
+.emmet--6th{
+    display: flex;
+    justify-content: center;
+}
+.emmet--6th img{
+    max-width: 100%;
+    width: 300px;
+    margin: 0 10px;
+}
+.emmet--7th{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.emmet--7th img{
+    max-width: 100%;
+    width: 600px;
+    margin: 10px;
+}
+.emmet--7th img:last-child{
+    width: 250px;
+}
+.emmet--9th{
+    display: flex;
+    justify-content: center;
+}
+.emmet--9th img{
+    max-width: 100%;
+    width: 360px;
+    margin: 0 10px;
+}
+.emmet--10th{
+    display: flex;
+    justify-content: center;
+}
+.emmet--10th img{
+    max-width: 100%;
+    width: 280px;
+    margin: 10px;
+}
+.emmet--11th{
+    display: flex;
+    justify-content: center;
+}
+.emmet--11th img{
+    max-width: 100%;
+    width: 280px;
+    margin: 10px;
+}
+.emmet--html--table{
+    margin: auto;
+    text-align: left;
+    max-width: 100%;
+    padding: 8px;
+}
+.emmet--html--table td{
+    padding: 6px 10px 6px 10px;
+    border-bottom: #e8e8e8 solid 1px;
+}
+.emmet--html--table tr{
+    border-bottom: #e8e8e8 solid 1px;
+}
+.emmet--html--table th{
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+    max-width: 800px;
+    color: #e8e8e8;
+    font-family: Montserrat;
+}
+.content h3{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.content h2{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.content h3:first-child{
+    margin-top: 36px;
+}
+.content--1st--img img{
+    height: 160px;
+    margin: auto;
+}
+.content--1st--img{
+    display: flex;
+    justify-content: center;
+}
+.content h4{
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.content p{
+    margin: 16px;
+    text-align: justify;
+}
+/* ---------------------indice desplegable-------------------------------- */
+#check {
+    display: none;
+}
+
+
+.checkbtn {
+    /* display: block; */
+    position: fixed;
+    width: 69px;
+    height: 26px;
+    text-align: center;
+    color: aliceblue;
+    left: 0;
+    background: black;
+    top: 105px;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px 10px 10px 0px;
+}
+
+
+.nav-indice ul {
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    /* width: 17%; */
+    /* height: 100vh; */
+    transition: left 0.25s;
+    margin: 0;
+    padding-top: 70px;
+    background-color: #000000;
+
+}
+
+ul {
+    padding: 0;
+}
+
+.nav-indice ul li {
+    padding: 22px;
+    display: flex;
+    /* justify-content: center; */
+    margin: 0;
+    background-color: rgb(17 17 17);
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+#check:checked~.nav-indice ul {
+    left: 0;
+}
+
+#check:checked~.checkbtn .indice {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* ------------------------------------------responsive------------------------------- */
+@media screen and (max-width:500px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header img{
+        width: 40px;
+        margin-bottom: 10px;
+    }
+}
+.emmet--css--table{
+    margin: auto;
+    text-align: left;
+    max-width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+.emmet--css--table th{
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 15px;
+}
+.emmet--css--table caption{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.emmet--css--table td{
+    padding: 6px 10px 6px 10px;
+    font-size: 14px;
+    border-bottom: #e8e8e8 solid 1px;
+}
+.emmet--css--table tr{
+    border-bottom: #e8e8e8 solid 1px;
+}
+.emmet--css--table th{
+    text-align: center;
+}
+.tablas--css{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color:#eee;
+    padding: 30px;
+    font-family: Montserrat;
+    margin-top: 30px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.footer img{
+    filter: invert();
+    width: 25px;
+    margin: 0 10px;
+}
+footer h4, p{
+    font-family: Montserrat;
+    color: #eee;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+/* ---------------------indice desplegable-------------------------------- */
+#check {
+    display: none;
+}
+
+
+.checkbtn {
+    /* display: block; */
+    position: fixed;
+    width: 69px;
+    height: 26px;
+    text-align: center;
+    color: aliceblue;
+    left: 0;
+    background: black;
+    top: 105px;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px 10px 10px 0px;
+}
+
+
+.nav-indice ul {
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    /* width: 17%; */
+    /* height: 100vh; */
+    transition: left 0.25s;
+    margin: 0;
+    padding-top: 70px;
+    background-color: #000000;
+
+}
+
+ul {
+    padding: 0;
+}
+
+.nav-indice ul li {
+    padding: 22px;
+    display: flex;
+    /* justify-content: center; */
+    margin: 0;
+    background-color: rgb(17 17 17);
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+#check:checked~.nav-indice ul {
+    left: 0;
+}
+
+#check:checked~.checkbtn .indice {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

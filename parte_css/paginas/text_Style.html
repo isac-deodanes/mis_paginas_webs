@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/textStyle.css">
+    <link rel="shortcut icon" href="../images/css--favicon.png" type="image/x-icon">
+
+    <title>text style</title>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo--header--css.png" alt="img">
+        <nav>
+            <a href="../css_index.html">Inicio</a>
+            <a href="/parte_html/html_index.html">HTML</a>
+            <a href="#">JavaScript</a>
+            <a href="/acerca_d/contactanos.html">Contáctanos</a>
+            <a href="/acerca_d/conocenos.html">Acerca de nosotros</a>
+        </nav>
+        <!-- -------------------menu deplegable------------------------------- -->
+    </header>
+    <br><br><br><br>
+    <main>
+        <input type="checkbox" id="check">
+        <div class="nav-indice">
+            <ul>
+                <li><a href="#font_family">font family</a></li>
+                <li><a href="#font_size">font size</a></li>
+                <li><a href="#font_weight">font weight</a></li>
+                <li><a href="#text_color">color de texto</a></li>
+                <li><a href="#text_decoration">text decoration</a></li>
+                <li><a href="#text_shadow">text shadow</a></li>
+                <li><a href="#leter_spacing">leter spacing</a></li>
+            </ul>
+        </div>
+
+        <label for="check" class="checkbtn">Indice</label>
+
+        <div class="estilo">Estilos CSS para textos</div><br>
+        <section>
+            <div class="descripcion">Con esta interesante informacion, vas a prender a poner estilos a los textos con
+                CSS como : el tipo de letra,Tamaño de fuente,colores,variante, peso, sombras, alineacion, etc.Hoy
+                conoceremos
+                todas las propiedades y valores de CSS para tener el control total sobre la apariencia de los textos de
+                nuestras paginas web.
+            </div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <div class="titulo" id="font_family">Font family</div><br>
+            <div class="subtitulo">La propiedad font-family para la familia tipográfica</div>
+            <p>Gracias a la propiedad font-family podemos definir el tipo de letra o familia tipográfica para
+                cualquier elemento de texto que tengamos, estos pueden ser por ejemplo: un párrafo, títulos, subtítulo,
+                enlaces, etc.</p><br>
+            <p>Existen dos tipos de nombres de familias de fuente:</p>
+            <br>
+            <li>Familia de fuentes: una familia especifica (como: times new roman, courier o arial, etc.)</li>
+            <li>Familia genérica: un grupo de familia de fuentes con un aspecto similar (como: serif, fantasy o
+                monospace, etc.)</li>
+            <br>
+            <p>Ejemplo: A continuación observemos los ejemplos de código con sus respectivos resultados.</p>
+
+            <div class="cont-imagen">
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML1.png" alt="iamgen1">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS1.png" alt="imagen2">
+                </div>
+
+            </div>
+            <br>
+            <p>Recordemos que el nombre de la clase puede ser cualquiera, en el ejemplo usamos solo para identificar y
+                visualizar la diferencia.</p>
+
+            <br>
+            <center>Resultado</center>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult1.png" alt="imagen4">
+                </div>
+            </div>
+            <br>
+            <div class="subtitulo">Valores genericos</div>
+            <br>
+            <p>La propiedad font-family puede tomar cualquier familia tipográfica, a continuación describimos algunas
+                genéricas.</p>
+            <ul>
+                <li><b>initial.-</b>Señala que tipo de letra debe ser el establecido por defecto en el navegador.</li>
+                <li><b>inherit.-</b> El tipo de letra debe ser heredado de su elemento padre.</li>
+                <li><b>serif.-</b>Fuente genérica con serif como, por ejemplo, el tipo de fuente Times.</li>
+                <li><b>sans-serif.- </b>Fuente genérica sin serif como, por ejemplo, el tipo de fuente Arial.</li>
+                <li><b>monospace.-</b>estilo de fuente genérica Monospace, como por ejemplo Courier.</li>
+                <li><b>cursive.- </b>Estilo de fuente genérica cursiva, como por ejemplo Script.</li>
+            </ul>
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo" id="font_size">Font-Size</div><br>
+            <div class="subtitulo">La propiedad font-size es para establecer tamaño de fuente</div><br>
+            <p>La propiedad font-size indica el tamaño de fuente para nuestros elementos de texto. Podemos establecer el
+                tamaño de letra con palabras clave o indicando una medida exacta con sus respectivas unidades. Se suele
+                emplear palabra clave cuando no se desea que el usuario modifique el tamaño de letra.</p>
+            <div class="subtitulo">Valores con palabra clave</div>
+            <p>Las palabras clave para indicar el tamaño de letra son:</p>
+            <ul>
+                <li>small: pequeño</li>
+                <li>medium: mediano</li>
+                <li>large: grande</li>
+                <li>x-large: muy grande</li>
+                <li></li>
+            </ul>
+            <p>Ejemplo de código para establecer tamaño de letra con palabra clave como valor:</p>
+            <div class="cont-imagen">
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML2.png" alt="iamgen5">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS2.png" alt="imagen6">
+                </div>
+
+            </div>
+            <br><br>
+            <center>Resultado</center><br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult2.png" alt="imagen7">
+                </div>
+            </div><br>
+            <br>
+            <div class="subtitulo">Valores numéricos</div>
+            <p>Generalmente, para establecer el tamaño de letra se trabaja con valores numéricos y sus respectivas
+                unidades de medida que pueden ser píxeles o ems.</p>
+
+            <ul>
+                <li><b>Pixeles-</b> Los píxeles permiten establecer un tamaño exacto.</li>
+                <li><b>Ems-</b>Permite establecer un tamaño relativo, el texto puede ser redimensionado por los
+                    navegadores web.
+                </li>
+            </ul>
+            <br>
+            <div class="subtitulo">Equivalencia entre píxeles y ems</div>
+            <p>1px equivale a 16em, por lo tanto podemos emplear la fórmula de conversión: em=px/16</p>
+            <p>Aplicando la conversión podemos afirmar que 32px equivalen a 2em, si empleamos cualquiera de ellos en los
+                valores para la dimensión de letra, producirán el mismo resultado.</p>
+
+            <p>Ejemplo:</p>
+            <div class="cont-imagen">
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML3.png" alt="iamgen6">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS3.png" alt="imagen7">
+                </div>
+
+            </div>
+            <br><br>
+            <center>Resultado</center><br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult3.png" alt="imagen8">
+                </div>
+            </div>
+            <br>
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo" id="font_weight">font-weight</div><br>
+            <p>La propiedad font-weight para texto, nos permite establecer el ancho de un texto, podemos elegir entre
+                textos con grosores desde muy delgados hasta muy anchos independientemente de otras propiedades.</p>
+
+            <p>Puede tomar valores con palabras clave o valores numéricos.</p><br>
+            <div class="subtitulo">Valores de font-weight</div>
+            <ul>
+                <li><b>ligther-</b>este valor produce un texto ligero o delgado.</li>
+                <li><b>normal.-</b>Normal define el grosor de texto por defecto, sin modificar el grosor.</li>
+                <li><b>bold.-</b>establece texto grueso o en negrita.</li>
+                <li><b>bolder.-</b> produce un texto bastante grueso.</li>
+            </ul>
+            <p>los valores numéricos pueden ir de 100 a 900, siendo 100 el texto más delgado y 900 el más grueso;
+                también cabe mencionar que 400 produce el mismo resultado que el valor normal y 600 produce el mismo
+                resultado que el valor bold.</p>
+
+            <div class="subtitulo">Ejemplos</div>
+            <div class="cont-imagen">
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML4.png" alt="iamgen8">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS4.png" alt="imagen9">
+                </div>
+            </div><br>
+            <center>Resultado</center><br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult4.png" alt="imagen8">
+                </div>
+            </div><br>
+            <p>Como podemos observar, entre los valores ligero y normal, el resultado casi no muestra mucha diferencia y
+                lo mismo ocurre entre bold y bolder.</p><br>
+
+            <div class="subtitulo">Ejemplo con de font-weight con valores numéricos</div><br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML5.png" alt="iamgen10">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS5.png" alt="imagen11">
+                </div>
+            </div><br>
+            <center>Resultado</center>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult5.png" alt="imagen12">
+                </div>
+            </div>
+            <br>
+            <p>Como se observa en los resultados, es curioso notar que la diferencia no se nota claramente en el
+                ejemplo, sin embargo con la combinación de estilos, tamaños y otras propiedades de texto con el peso de
+                fuente se pueden conseguir fantásticos diseños y textos muy atractivos que ni te imaginas, realmente hay
+                universo de combinaciones y posibilidades que los iremos aprendiendo poco a poco.</p>
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo" id="text_color">Color de letra CSS</div><br>
+            <p>Poner color a un texto en CSS es tan simple como apuntar al elemento mediante un selector y establecer la
+                propiedad color, dentro del valor podemos colocar el color que deseamos y existe más de una forma de
+                hacerlo.</p>
+            <div class="subtitulo">Valores de la propiedad color</div>
+
+            <ul>
+                <li>Podemos establecer el valor del color utilizando palabras clave en ingles como: red (rojo), blue
+                    (azul), green (verde).</li>
+                <li>Otra forma de colocar el color es mediante valores hexadecimales, se trata de un # seguido de 6 o 3
+                    valores alfanuméricos, por ejemplo el amarillo es: #FFFF00</li>
+                <li>La tercera forma es empleando valores RGB (Rojo, Verde, Azul)</li>
+            </ul>
+            <p>Aquí tienes un selector de color que muestra los valores RGB: <input type="color"></p>
+            <p>Veamos los equivalentes a los colores rojo, verde y azul en Hexadecimales y RGB.</p>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageColor.png" alt="imagen13">
+                </div>
+            </div>
+            <br>
+            <div class="subtitulo">Ejemplo de color de texto en CSS</div>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML6.png" alt="iamgen14">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS6.png" alt="imagen15">
+                </div>
+            </div>
+            <br>
+            <center>Resultado</center>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult6.png" alt="imagen16">
+                </div>
+            </div>
+            <br>
+            <p>En el ejemplo, empleamos negrita para todos los textos y luego apuntamos a cada párrafo mediante su
+                identificador class para indicar su color.</p>
+            <p>Los colores pueden expresarse en palabra clave, hexadecimal o RGB y el resultado visual será el mismo.
+                Cabe señalar que <b>para expresar colores RGB debemos colocar los números entre paréntesis antecedido
+                    por</b>
+                rgb. Así: rgb(0, 128, 0)</p>
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo">Propiedad tex-align para alinear el texto horizontalmente</div>
+            <p>La propiedad text-align es la que nos permite determinar la alineación de los elementos de texto con CSS,
+                por defecto los textos están alineados a la izquierda en cualquier navegador web, sin embargo podemos
+                modificar e indicar que sea a la derecha, al centro o justificado.</p>
+            <div class="subtitulo">Valores para la propiedad de text-align</div>
+            <ul>
+                <li><b>left.- </b>indica que el texto debe ser alineado a la izquierda. </li>
+                <li><b>right.- </b>indica que el texto debe ser alineado a la derecha.</li>
+                <li><b>center.-</b>establece texto con alineación al centro</li>
+                <li><b>justify.-</b>hace que el texto se justifique, quedando las líneas estiradas de principio a fin
+                    para que todos queden iguales.</li>
+            </ul>
+            <div class="subtitulo">Ejemplos de alineación de texto CSS</div>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML7.png" alt="iamgen17">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS7.png" alt="imagen18">
+                </div>
+            </div>
+            <br>
+            <center>Resultado</center>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult7.png" alt="imagen19">
+                </div>
+            </div>
+            <br>
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo">Alinear el texto verticalmente en CSS</div>
+            <p>La propiedad vertica-align se emplea en general para establecer la alineación vertical de un elemento
+                HTML dentro de otro; en este caso nos enfocaremos para texto y mencionaremos los aspectos más
+                importantes.</p>
+            <p>Es bastante útil por ejemplo cuando queremos alinear un texto al medio o en la parte inferior de un
+                bloque, o quizá dentro de una tabla o cualquier otro contenedor como veremos en los ejemplos.</p>
+            <div class="subtitulo">Valores para vertical-align</div>
+            <ul>
+                <li><b>top.- </b>Indica que el texto se ubica en la parte superior. </li>
+                <li><b>middle.- </b>establece que el texto se ubica en al medio.</li>
+                <li><b>bottom.-</b>Ubica al texto en la parte inferior.</li>
+
+            </ul>
+            <div class="subtitulo">Ejemplo de alineación vertical de texto en tabla con CSS</div>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML8.png" alt="iamgen20">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS8.png" alt="imagen21">
+                </div>
+            </div>
+            <br>
+            <center>Resultado</center>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult8.png" alt="imagen22">
+                </div>
+            </div>
+            <br>
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo" id="text_decoration">Propiedad text-decoration</div>
+            <br>
+            <p>La propiedad text-decoration nos permite decorar nuestros elementos de texto, básicamente se trata de
+                agregar una línea decorativa ya sea debajo, encima o al medio del texto en cuestión; mejor exploremos
+                los posibles valores y los resultados que se obtienen.</p>
+            <div class="subtitulo">Valores para text-decoration en CSS</div>
+            <ul>
+                <li><b>none.- </b>evita que se aplique algún estilo de decoración de texto.</li>
+                <li><b>inherit.- </b>hereda el estilo del elemento padre que lo contiene</li>
+                <li><b>overline.-</b>decora con una línea horizontal encima del texto.</li>
+                <li><b>underline.-</b>decora con una línea horizontal debajo del texto.</li>
+                <li><b>line-through.-</b>este valor hace que se dibuje una línea horizontal atravesando al texto</li>
+            </ul>
+            <p>Es posible combinar los valores: underline, overline y line-through en una lista separada por espacios
+                para añadir múltiples líneas decorativas.</p>
+            <br>
+
+            <div class="subtitulo">Ejemplo de text-decoration</div>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML9.png" alt="iamgen23">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS9.png" alt="imagen24">
+                </div>
+            </div>
+            <br>
+            <center>Resultado</center>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult9.png" alt="imagen25">
+                </div>
+            </div>
+            <br>
+        </section>
+        <br><br>
+        <section>
+
+            <div class="titulo" id="text_shadow">Propiedad text-shadow</div>
+            <br>
+            <p>Poner sombra a un texto es más simple de lo que imaginas, simplemente empleamos la propiedad text-shadow
+                y en sus valores colocamos las medidas y color de sombra deseado, te explico mejor en pasos y con
+                ejemplo.</p>
+            <div class="subtitulo">Valores para text-shadow</div>
+            <p>La forma más simple de colocar sombra a un texto con CSS consiste en establecer los siguientes valores
+                para la propiedad de sombra:</p>
+            <ul>
+                <li><b>Distancia horizontal.- </b>Es el primero en ser definido, se expresa con un valor numérico y su
+                    unidad de medida. Establece cuánto será la sombra en dirección horizontal, si el valor es positivo
+                    la sombra se dirige a la derecha y si es negativo a la izquierda.</li>
+                <li><b>Distancia vertical.- </b>Es el segundo valor que debemos definir y también con un valor numérico
+                    con unidades de medida. Establece cuánto será la sombra en dirección vertical, si el valor es
+                    positivo, la sombra se dirige hacia abajo y si es negativo hacia arriba.</li>
+                <li><b>Desenfoque.-</b> Determina el radio de desenfoque, este valor también es numérico y hará que la
+                    sombra tenga un aspecto borroso, de tal manera que aparente una sombra.</li>
+                <li><b>Color de sombra.-</b>definimos un color para la sombra.</li>
+            </ul>
+            <br>
+            <div class="subtitulo">Agregando sombras de color a texto CSS</div>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML10.png" alt="iamgen26">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS10.png" alt="imagen27">
+                </div>
+            </div>
+            <br>
+            <center>Resultado</cent>
+                <br>
+                <div class="cont-imagen">
+                    <div class="subcontenedor-resultado">
+                        <img src="../images/imageResult10.png" alt="imagen28">
+                    </div>
+                </div>
+                <br>
+
+        </section>
+        <br><br>
+        <section>
+            <div class="titulo" id="leter_spacing">propiedad Letter-spacing</div><br>
+            <ul>
+                <li><b>normal.- </b>Establece el estilo por defecto, sin modificar.</li>
+                <li><b>inherit.- </b>Hereda el estilo de espaciado de un elemento padre.</li>
+                <li><b>length.-</b> Indica el espaciado en números con su respectiva unidad como: px, pt, em, %, etc. y
+                    pueden ser valores positivos o negativos, los positivos amplían el espacio y los negativos los
+                    reducen e incluso los combina aparentemente.</li>
+            </ul>
+            <br>
+            <div class="subtitulo">Valores para letter-spacing CSS</div>
+            <p>Letter-spacing Es la propiedad de CSS que <b>nos permite controlar el espacio entre letras de un elemento
+                    de
+                    texto</b>, pueden ser: normales, amplios, estrechos y además pueden ser expresados con valor
+                numérico y su
+                unidad de medida, conozcamos los valores:</p>
+            <br>
+            <div class="subtitulo">Letter-spacing ejemplos de como usar</div>
+
+            <div class="cont-imagen">
+                <div class="subcontenedor-imagen">
+                    <center>Codigo HTML</center>
+                    <img src="../images/imageHTML11.png" alt="iamgen29">
+                </div>
+
+                <div class="subcontenedor-imagen">
+                    <center>Codigo CSS</center>
+                    <img src="../images/imageCSS11.png" alt="imagen30">
+                </div>
+            </div>
+            <br>
+            <center>Resultado</center>
+            <br>
+            <div class="cont-imagen">
+                <div class="subcontenedor-resultado">
+                    <img src="../images/imageResult11.png" alt="imagen31">
+                </div>
+            </div>
+            <br>
+
+        </section>
+    </main>
+    <footer>
+        <nav class="footer">
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="../images/icons8-facebook-nuevo-50.png" alt=""></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="../images/icons8-instagram-50.png" alt=""></a>
+            <a href="https://www.youtube.com/"><img src="../images/icons8-youtube-50.png" alt=""></a>
+            <a href="https://x.com/?lang=es"><img src="../images/icons8-twitterx-50.png" alt=""></a>
+            <a href="https://sv.linkedin.com/"><img src="../images/icons8-linkedin-50.png" alt=""></a>
+        </nav>
+        <h4 class="hcuatro">
+            HTML Solutions
+        </h4>
+        <p class="pFooter">
+            © Derechos reservados 2024
+        </p>
+    </footer>
+</body>
+
+</html>

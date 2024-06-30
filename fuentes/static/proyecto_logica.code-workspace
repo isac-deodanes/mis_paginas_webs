@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../proyecto_logica"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../EjemplosParcticoParaExamen"
+		},
+		{
+			"path": "../../../EXAMEN-FINAL-DLP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proyecto_logica"
+	}
+}

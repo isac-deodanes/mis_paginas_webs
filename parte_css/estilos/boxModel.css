@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fuentes/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fuentes/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fuentes/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(../fuentes/static/Montserrat-Bold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(#444, #222,#111);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #121212;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 18px #68e;
+}
+header img{
+    width: 50px;
+}
+header a{
+    text-decoration: none;
+    color: #68e;
+    font-family: Montserrat;
+    margin: 0 16px;
+    font-size: 18px;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+.principal{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.titulo{
+    padding: 20px;
+    font-size:30px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: bold;
+}
+.intro{
+    text-align: center;
+    font-size:25px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: bold;
+}
+.subtitulo{
+    text-align: center;
+    font-size:19px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ul{
+    
+    margin-left: 20px;
+}
+p,li{
+    text-align: justify;
+    font-size: 19px;
+    font-family: Montserrat;
+    color: #eee;
+    
+}
+section{
+    width: 70%;
+}
+.cont-imagen{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100%;
+}
+.demo-img{
+    width: 60%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color:#eee;
+    padding: 30px;
+    font-family: Montserrat;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.footer img{
+    filter: invert();
+    width: 25px;
+    margin: 0 10px;
+}
+footer .hcuatro, .pFooter{
+    font-family: Montserrat;
+    color: #eee;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.hcuatro{
+    margin-top: 16px;
+}
+.pFooter{
+    margin-top: 16px;
+    font-size: 15px;
+}
