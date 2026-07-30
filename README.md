@@ -13,7 +13,15 @@ Mini-sitio de referencia y práctica sobre maquetado semántico con HTML5 y dise
 
 **HTML Solutions** es un mini-sitio educativo construido para practicar y consolidar conceptos de HTML5 y CSS3: etiquetas semánticas, box model, selectores, estilos de texto y atajos con Emmet. Incluye además un conjunto de páginas estilo landing (Conócenos, Contáctanos, Galería, Promociones) para practicar el maquetado típico de un sitio de negocio.
 
-> 📸 *Capturas de pantalla — próximamente.*
+<p align="center">
+  <img src="screenshot/inicio.png" width="30%" />
+  <img src="screenshot/sectionHtml.png" width="30%" />
+  <img src="screenshot/sectionss.png" width="30%" />
+  <img src="screenshot/csscap.png" width="30%" />
+  <img src="screenshot/contact.png" width="30%" />
+  <img src="screenshot/sctionCsss2.png" width="30%" />
+  
+</p>
 
 ---
 
