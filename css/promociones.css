@@ -15,7 +15,7 @@
     src: url(../fuentes/static/Montserrat-Bold.ttf);
 }
 body{
-    background: linear-gradient(#444, #222,#000);
+    background: linear-gradient(#262626, #222,#000);
     margin: 0;
 }
 header{
@@ -25,6 +25,7 @@ header{
     flex-wrap: wrap;
     margin: auto;
     padding: 20px;
+    background: #191919;
 }
 .openner{
     font-family: Montserrat;

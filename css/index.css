@@ -15,7 +15,7 @@
     src: url(../fuentes/static/Montserrat-Bold.ttf);
 }
 body{
-    background: linear-gradient(#444, #222,#000);
+    background: linear-gradient(#262626, #222,#000);
     margin: 0;
 }
 header{
@@ -25,6 +25,10 @@ header{
     flex-wrap: wrap;
     margin: auto;
     padding: 20px;
+    /* position: sticky; */
+    /* top: 0; */
+    background: #191919;
+    box-shadow: 0px -3px 17px 0px darkgray;
 }
 .openner{
     font-family: Montserrat;
@@ -49,6 +53,7 @@ header > nav{
     font-family: Montserrat;
     color: #eee;
 }
+
 .divhead img{
     width: 50px;
     height: 50px;
@@ -62,7 +67,7 @@ h1{
     letter-spacing: 4px;
     font-size: 36px;
     text-align: center;
-    margin: 30px 0 20px 0;
+    margin: 70px 0 20px 0;
 }
 
 .externos{
@@ -90,16 +95,17 @@ h1{
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     
 }
-.externos a{
+.externos{
     text-decoration: none;
     font-family: Montserrat;
     color: #eee;
     transition-property: color;
     transition-duration: 0.30s;
 }
+
 
 .externos:first-child:hover{
     box-shadow: 0 0 26px #fe8330;
@@ -126,6 +132,9 @@ h1{
 .externos:last-child a:hover{
     color: #ffff56;
 }
+
+
+
 nav a:hover{
     text-decoration: underline;
 }
