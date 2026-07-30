@@ -20,7 +20,7 @@ Mini-sitio de referencia y práctica sobre maquetado semántico con HTML5 y dise
 ## 🗂️ Mapa del sitio
 
 ```
-mis_paginas_webs/
+html-solution/
 ├── main.html                    # Página principal / punto de entrada
 ├── acerca_d/                    # Páginas estilo landing
 │   ├── conocenos.html
@@ -52,8 +52,8 @@ mis_paginas_webs/
 No requiere instalación, servidor ni dependencias. Basta con clonar o descargar el repositorio y abrir `main.html` directamente en el navegador:
 
 ```bash
-git clone https://github.com/isac-deodanes/mis_paginas_webs.git
-cd mis_paginas_webs
+git clone https://github.com/isac-deodanes/html-solution.git
+cd html-solution
 ```
 
 Luego abre `main.html` con tu navegador de preferencia.
